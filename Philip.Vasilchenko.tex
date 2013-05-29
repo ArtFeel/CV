@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 \moderncvstyle{classic} 
 \moderncvcolor{red}
@@ -6,7 +6,7 @@
 
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.82]{geometry}
 
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \AfterPreamble{\hypersetup{
@@ -25,9 +25,7 @@
 \email{philip.vasilchenko@gmail.com}
 %\social[linkedin]{ArtFeel} 
 %\social[github]{ArtFeel}
-\extrainfo{
-\includegraphics[height = 8pt]{SkypeIcon.pdf} \href{skype://www.artfeel}{www.artfeel}
-}
+\extrainfo{\includegraphics[height = 8pt]{SkypeIcon.pdf} \href{skype://www.artfeel}{www.artfeel}}
 \photo[50pt][0pt]{photo}
 
 \makeatletter
@@ -38,109 +36,108 @@
 \makecvtitle
 
 \section{Summary}
-\cvitem
-  {}
-  {My main direction --- developing awesome iOS applications.\newline{}
-  I'm most passionate about developing hight quality and maintainable software, exploring new technologies and libraries, being a team player in agile environment. Use best practices in creating software (write simple and clean code using OOP and design patterns). I have experience in developing mobile applications and games for iOS, Android, Kindle~Fire and Windows~Phone~7.{}}
+  \cvitem {}{
+    My main direction — developing awesome iOS applications. \newline
+    I'm most passionate about developing hight quality and maintainable software, exploring new technologies and libraries, being a team player in agile environment. Use best practices in creating software (write simple and clean code using OOP and design patterns). I have experience in developing mobile applications and games for iOS, Android, Kindle~Fire and Windows~Phone~7.{}}
+
+\section{Experience}
+  \cventry
+    {May 2013 — Present}
+    {iOS developer}{\href{http://megogo.net}{MEGOGO.NET}. Kyiv, Ukraine}{}{}{
+      Create iOS app for Megogo multimedia portal}
+
+  \cventry
+    {Sep 2012 — May 2013}
+    {iOS developer}{\href{http://mlsdev.com}{Stanfy}. Kyiv, Ukraine}{}{}{
+      Create awesome iPhone and iPad apps with Objective-C
+      \newline Software design, implementation and time estimation}
+
+  \cventry
+    {May 2011 — Jul 2012}
+    {iOS developer}{\href{http://mlsdev.com}{MLSDev LLC}. Donetsk, Ukraine}{}{}{
+      Assessment of requirements for software development and time estimation. 
+      \newline Developing apps for iOS with Objective-C
+      \newline Developing cross-platform games with Lua and Corona SDK
+      \newline Developing desktop client for traffic monitoring system}
+
+\section{Commercial Projects}
+  \subsection{Objective-C}
+    \cvitem {Signature App}{
+      iPad app for internal use by companies that organize conferences and events. Allows customers to gather information and signatures of participants. Can work offline and synchronize with the server on demand.}
+
+    \cvitem {SongHi Audio Sequencer} {
+      \url{http://stanfy.com/projects/songhi-audio-sequencer/} \newline
+      iOS audio engine for a music sequencer, which would reproduce melodies played on various musical instruments, together with special audio effects.}
+
+    \cvitem {eCommerce App}{
+      Universal Marketplace App for iPhone and iPad. Apps provide easy access to one of the biggest European supermarkets on iOS and Android mobile devices to create shopping lists, buy and order groceries delivery.}
+
+    \cvitem {vTuner for Alpine}{
+      \url{https://itunes.apple.com/gb/app/vtuner-for-alpine/id538613744} \newline
+      \url{http://www.youtube.com/watch?v=aYWBz5djIvk} \newline
+      \url{http://radio.vtuner.com/alpine/} \newline
+      vTuner internet radio gives you access to thousands of radio stations from across the globe.
+      \newline Conveniently play your favorite stations using the Alpine car sound system.}
+
+    \cvitem {iTaxi}{
+      \url{http://www.6270000.ru/} \newline
+      Application that allows users to call a taxi quickly using their GPS location.}
+
+  \subsection{Lua (CoronaSDK)}
+    \cvitem {Rocket Space}{
+      \url{http://itunes.apple.com/app/rocket-space/id531141378} \newline
+      Rocket Space is a mobile arcade game, where one is to fly a rocket and avoid obstructions.\newline
+      Game is available on iOS, Android and Kindle Fire.}
+    
+  \subsection{C\# / .Net Framework 4}
+    \cvitem {GPS Alarm}{
+      \url{http://www.gpsalarm.ru/en/} \newline
+      S-5000. New generation of car alarm system controlled by mobile phone.}
+
+\section{Development skills}
+  \subsection{Programming Languages}
+    \cvitem {Expert}{Objective-C, Lua} 
+    \cvitem {Intermediate}{C\#, C}
+    \cvitem {Basic}{C++, Ruby, JavaScript, HTML/CSS}
+
+  \subsection{iOS Development}
+    \cvitem {Core}{UIKit, Foundation, GCD, CoreGraphics, CoreData, MapKit, GameKit, AVFoundation}
+    \cvitem {Frameworks}{AFNetworking, RestKit, NimbusKit, MagicalRecord, Cedar}
+    \cvitem {Tools}{CocoaPods, Instruments, TestFlight, Crashlytics, Flurry}
+
+\subsection{Other}
+\cvitem {GameDev}{Corona SDK, Cocos2D, Unity 3D}
+\cvitem {.Net}{WPF, XNA, XAML, Silverlight, Mono}
+
+\section{Computer skills}
+  \cvitem {IDE}{AppCode, XCode, MonoDevelop, Visual Studio}
+  \cvitem {OS}{MacOS X, Linux(Ubuntu, Debian), Windows}
+  \cvitem {VCS}{Git, Mercurial, SVN}
+  \cvitem {PM Tools}{Pivotal Tracker, Redmine, Jira, GitLab, Jenkins}
+  \cvitem {Other}{BDD, TDD, Scrum, Agile}
 
 \section{Education}
   \cventry
-    {Oct 2006 - Dec 2011}
+    {Oct 2006 — Dec 2011}
     {Software Development}
     {Computer Academy "Step", Donetsk, Ukraine}
     {Grade: 5/5}{}
     {Team leader, represented Ukraine at the final of Microsoft ImagineCup'10 at Poland.}
   \cventry
-    {Sep 2006 - Jul 2010}
+    {Sep 2006 — Jul 2010}
     {Finance and Credit, Bachelor}
     {\newline Open International University of Human Development “Ukraine”}
     {Grade: 5/5}{}{}
-
-\section{Experience}
-\cventry
-  {Sep 2012 - Present}
-  {iOS developer}
-  {Stanfy. Kyiv, Ukraine}
-  {}{}
-  {Create awesome iPhone and iPad apps
-  \newline Software design, Implementation}
-\cventry
-  {May 2011 - Jul 2012}
-  {iOS developer}
-  {MLSDev LLC. Donetsk, Ukraine}
-  {}{}
-  {Assessment of requirements for software development and time estimation. 
-  \newline Developing apps for iOS with Objective-C
-  \newline Developing cross-platform games with Lua and Corona SDK
-  \newline Developing desktop client for traffic monitoring system}
-
-\section{Commercial Projects}
-  \subsection{Objective-C}
-  \cvitem
-    {eCommerce App}
-    {Universal Marketplace App for iPhone and iPad. Apps provide easy access to one of the biggest European supermarkets on iOS and Android mobile devices to create shopping lists, buy and order groceries delivery.}
-  \cvitem
-    {vTuner for Alpine}
-    {\url{https://itunes.apple.com/gb/app/vtuner-for-alpine/id538613744}\newline{}
-    \url{http://www.youtube.com/watch?v=aYWBz5djIvk}\newline
-    \url{http://radio.vtuner.com/alpine/}\newline
-    vTuner internet radio gives you access to thousands of radio stations from across the globe.
-    \newline Conveniently play your favorite stations using the Alpine car sound system. }
-  \cvitem
-    {iTaxi}
-    {\url{http://www.6270000.ru/}\newline{}
-    Application that allows users to call a taxi quickly using their GPS location.}
-    
-  \subsection{Lua (CoronaSDK)}
-  \cvitem
-    {Rocket Space}
-    {\url{http://itunes.apple.com/app/rocket-space/id531141378}\newline{}
-    Rocket Space is a mobile arcade game, where one is to fly a rocket and avoid obstructions.\newline
-    Game is available on iOS, Android and Kindle Fire.}
-    
-  \subsection{C\# / .Net Framework 4}
-  \cvitem
-    {GPS Alarm}
-    {\url{http://www.gpsalarm.ru/en/}\newline{}
-    S-5000. New generation of car alarm system.\newline
-    Undeniable advantage of the system is controlling by mobile phone.}
-
-\section{Development skills}
-\subsection{Programming Languages}
-\cvitem
-  {Expert}{Objective-C, Lua}
-\cvitem
-  {Intermediate}{C\#, C}
-\cvitem
-  {Basic}{C++, JavaScript}
-\subsection{Frameworks and tools}
-\cvitem{iOS}{UIKit, CocoaPods, Cedar, RestKit, AFNetworking, NimbusKit, TestFlight}
-\cvitem{GameDev}{Corona SDK, Cocos2D, Unity 3D}
-\cvitem{.Net}{WPF, XAML, XNA, Silverlight}
-
-\section{Computer skills}
-  \cvitem
-  {IDE}{AppCode, XCode, MonoDevelop, Visual Studio}
-  \cvitem
-  {OS}{MacOS X, Linux(Ubuntu, Debian), Windows}
-  \cvitem
-  {VCS}{Git, Mercurial, SVN}
-  \cvitem
-  {PM Tools}{Pivotal Tracker, Redmine, Jira, GitLab}
-  \cvitem
-  {Development technics}{BDD, TDD, XP, Continuous Integration}
     
 \section{Languages}
- \cvitem
-  {Native}{Russian, Ukrainian}
-\cvitem
-  {Professional}{English}
+  \cvitem {Native}{Russian, Ukrainian}
+  \cvitem {Professional}{English}
 
 \section{Public activity}
   \cvitem{Github}{\url{https://github.com/ArtFeel}}
   \cvitem{LinkedIn}{\url{http://www.linkedin.com/in/artfeel}}
-  \cvitem{Habrahabr}{\url{http://habrahabr.ru/users/agent_smith/}}
-  \cvitem{StackOverflow}{\url{http://stackoverflow.com/users/829155/artfeel}}
-  \cvitem{HashCode}{\url{http://hashcode.ru/users/1565/artfeel}}
+  %\cvitem{Habrahabr}{\url{http://habrahabr.ru/users/agent_smith/}}
+  \cvitem{\mbox{StackOverflow}}{\url{http://stackoverflow.com/users/829155/artfeel}}
+  %\cvitem{HashCode}{\url{http://hashcode.ru/users/1565/artfeel}}
 
 \end{document}
